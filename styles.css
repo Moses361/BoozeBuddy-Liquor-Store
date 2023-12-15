@@ -1,0 +1,46 @@
+/* Custom CSS for BoozeBuddy Homepage */
+
+/* Welcoming Banner */
+.jumbotron {
+    background-color: #343a40; /* Dark background color */
+    color: #ffffff; /* Text color */
+}
+
+.card:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+  }
+
+.product-image {
+    width: 300px;  /* or any size you want */
+    height: 300px; /* or any size you want */
+    object-fit: cover; /* this will ensure that your images cover the whole area without distortion */
+  }
+
+/* Featured Products Section */
+.card {
+    transition: transform 0.2s; /* Add a smooth transition effect on card hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Enlarge the card on hover */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #343a40; /* Dark background color */
+}
+
+.navbar-dark .navbar-brand {
+    color: #ffffff; /* Navbar brand text color */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff; /* Navbar link text color */
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: #ffffff; /* Navbar toggle icon color */
+}
