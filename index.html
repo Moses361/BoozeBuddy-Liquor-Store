@@ -12,13 +12,29 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="index.js"></script>
+    <!-- <a href="cart.html">View Cart</a> -->
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">BoozeBuddy</a>
-      <!-- Add additional navigation links if needed -->
-    </nav>
+   <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">BoozeBuddy</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="products.html">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cart.html">View Cart</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
     <!-- Homepage Content -->
     <div class="container mt-4">
@@ -57,12 +73,13 @@
       <h2 class="mb-4">Featured Products</h2>
 
       <div class="row">
+ 
         <!-- Product 1 -->
         <div class="col-md-4 mb-4" id="product1" data-category="Whiskey">
           <div class="card">
             <img
               class="card-img-top product-image"
-              src="/images/Beer.jpg"
+              src="/images/Whiskey.jpg"
               alt="Product 1 Image"
               style="width: 300px; height: 300px"
             />
@@ -71,8 +88,21 @@
               <p class="card-text">
                      Whiskey is a distilled alcoholic beverage made from fermented grain mash. It is aged in wooden barrels, which imparts a range of flavors, including caramel, vanilla, and oak. 
               </p>
-              <p class="card-text">Price: $24.99</p>
+              <p class="card-text">Price: $34.99</p>
               <!-- Add "Add to Cart" button or any other action buttons as needed -->
+              <!-- Add "Add to Cart" button -->
+              <button class="btn btn-primary add-to-cart" data-product-id="Whiskey" onclick="addToCart('Whiskey')">Add to Cart</button>
+
+<script>
+  function addToCart(productId) {
+    // Code to add product to cart goes here
+    alert('Added ' + productId + ' to cart');
+  }
+</script>
+      <!-- somewhere in your HTML -->
+<div id="total-cost">Total Cost: $0.00</div>
+<div id="cart-quantity">0</div>
+
             </div>
           </div>
         </div>
@@ -91,8 +121,13 @@
               <p class="card-text">
                 Vodka is a clear distilled alcoholic beverage. Different varieties can be made from fermented grains such as rye and wheat, or potatoes.
               </p>
-              <p class="card-text">Price: $24.99</p>
+              <p class="card-text">Price: $19.99</p>
               <!-- Add "Add to Cart" button or any other action buttons as needed -->
+              <!-- Add "Add to Cart" button -->
+              <button class="btn btn-primary add-to-cart" data-product-id="Vodka">Add to Cart</button>
+      <!-- somewhere in your HTML -->
+<div id="total-cost">Total Cost: $0.00</div>
+<div id="cart-quantity">0</div>
             </div>
           </div>
         </div>
@@ -101,7 +136,7 @@
           <div class="card">
             <img
               class="card-img-top product-image"
-              src="/images/Whiskey.jpg"
+              src="/images/Wine.jpg"
               alt="Product 2 Image"
               style="width: 300px; height: 300px"
             />
@@ -110,8 +145,13 @@
               <p class="card-text">
                 Red Wine is a fermented alcoholic beverage made from dark-colored grape varieties. It typically has rich flavors and is often enjoyed with meals or on its own.
               </p>
-              <p class="card-text">Price: $24.99</p>
+              <p class="card-text">Price: $19.99</p>
               <!-- Add "Add to Cart" button or any other action buttons as needed -->
+              <!-- Add "Add to Cart" button -->
+              <button class="btn btn-primary add-to-cart" data-product-id="Wine">Add to Cart</button>
+      <!-- somewhere in your HTML -->
+<div id="total-cost">Total Cost: $0.00</div>
+<div id="cart-quantity">0</div>
             </div>
           </div>
         </div>
@@ -132,6 +172,11 @@
               </p>
               <p class="card-text">Price: $24.99</p>
               <!-- Add "Add to Cart" button or any other action buttons as needed -->
+              <!-- Add "Add to Cart" button -->
+              <button class="btn btn-primary add-to-cart" data-product-id="Brandy">Add to Cart</button>
+      <!-- somewhere in your HTML -->
+<div id="total-cost">Total Cost: $0.00</div>
+<div id="cart-quantity">0</div>
             </div>
           </div>
         </div>
@@ -140,7 +185,7 @@
           <div class="card">
             <img
               class="card-img-top product-image"
-              src="/images/Wine.jpg"
+              src="/images/Beer.jpg"
               alt="Product 2 Image"
               style="width: 300px; height: 300px"
             />
@@ -149,7 +194,12 @@
               <p class="card-text">
                 Beer is a refreshing and widely consumed alcoholic beverage. It is typically made from fermented grains, predominantly malted barley, combined with water, hops, and yeast.
               </p>
-              <p class="card-text">Price: $24.99</p>
+              <p class="card-text">Price: $5.99</p>
+              <!-- Add "Add to Cart" button -->
+              <button class="btn btn-primary add-to-cart" data-product-id="Beer">Add to Cart</button>
+      <!-- somewhere in your HTML -->
+<div id="total-cost">Total Cost: $0.00</div>
+<div id="cart-quantity">0</div>
               <!-- Add "Add to Cart" button or any other action buttons as needed -->
             </div>
           </div>
@@ -169,7 +219,12 @@
               <p class="card-text">
                 Rum is a distilled alcoholic beverage made from sugarcane byproducts, such as molasses, or directly from sugarcane juice. With a diverse range of flavors.
               </p>
-              <p class="card-text">Price: $24.99</p>
+              <p class="card-text">Price:  $22.99</p>
+              <!-- Add "Add to Cart" button -->
+              <button class="btn btn-primary add-to-cart" data-product-id="Rum">Add to Cart</button>
+      <!-- somewhere in your HTML -->
+<div id="total-cost">Total Cost: $0.00</div>
+<div id="cart-quantity">0</div>
               <!-- Add "Add to Cart" button or any other action buttons as needed -->
             </div>
           </div>
@@ -190,10 +245,13 @@
                 <p class="card-text">
                   Tequila, originating from Mexico, is a distilled spirit crafted from the fermented juice of the blue agave plant. 
                 </p>
-                <p class="card-text">Price: $24.99</p>
-                
+                <p class="card-text">Price: $39.99</p>
               </p>
-              <p class="card-text">Price: $24.99</p>
+              <!-- Add "Add to Cart" button -->
+              <button class="btn btn-primary add-to-cart" data-product-id="Tequila">Add to Cart</button>
+      <!-- somewhere in your HTML -->
+<div id="total-cost">Total Cost: $0.00</div>
+<div id="cart-quantity">0</div>
               <!-- Add "Add to Cart" button or any other action buttons as needed -->
             </div>
           </div>
@@ -213,7 +271,12 @@
               <p class="card-text">
                 Sake is a traditional Japanese rice wine with a history dating back centuries. It is made through the fermentation of polished rice, water, yeast, and koji mold. 
               </p>
-              <p class="card-text">Price: $24.99</p>
+              <p class="card-text">Price: $18.99</p>
+              <!-- Add "Add to Cart" button -->
+              <button class="btn btn-primary add-to-cart" data-product-id="Sake">Add to Cart</button>
+      <!-- somewhere in your HTML -->
+<div id="total-cost">Total Cost: $0.00</div>
+<div id="cart-quantity">0</div>
               <!-- Add "Add to Cart" button or any other action buttons as needed -->
             </div>
           </div>
@@ -233,7 +296,12 @@
               <p class="card-text">
                 Absinthe is a highly alcoholic beverage known for its distinct anise flavor. It is often referred to as "the Green Fairy".
               </p>
-              <p class="card-text">Price: $24.99</p>
+              <p class="card-text">Price: $29.99</p>
+              <!-- Add "Add to Cart" button -->
+              <button class="btn btn-primary add-to-cart" data-product-id="Absinthe">Add to Cart</button>
+      <!-- somewhere in your HTML -->
+<div id="total-cost">Total Cost: $0.00</div>
+<div id="cart-quantity">0</div>
               <!-- Add "Add to Cart" button or any other action buttons as needed -->
             </div>
           </div>
@@ -253,7 +321,12 @@
               <p class="card-text">
                 Scotch is a whisky that originates from Scotland and is known for its distinct production process. It is typically made from malted barley and aged in oak barrels. 
               </p>
-              <p class="card-text">Price: $24.99</p>
+              <p class="card-text">Price:$45.99</p>
+              <!-- Add "Add to Cart" button -->
+              <button class="btn btn-primary add-to-cart" data-product-id="Scotch">Add to Cart</button>
+      <!-- somewhere in your HTML -->
+<div id="total-cost">Total Cost: $0.00</div>
+<div id="cart-quantity">0</div>
               <!-- Add "Add to Cart" button or any other action buttons as needed -->
             </div>
           </div>
@@ -273,7 +346,12 @@
                 <p class="card-text">
                   Cognac is a type of brandy that originates from the Cognac region in France. It is made from distilled white wine and aged in oak barrels. Cognac is known for its refined and complex flavors. 
                 </p>
-                <p class="card-text">Price: $24.99</p>
+                <p class="card-text">Price: $34.99</p>
+                <!-- Add "Add to Cart" button -->
+                <button class="btn btn-primary add-to-cart" data-product-id="Cognac">Add to Cart</button>
+      <!-- somewhere in your HTML -->
+<div id="total-cost">Total Cost: $0.00</div>
+<div id="cart-quantity">0</div>
                 <!-- Add "Add to Cart" button or any other action buttons as needed -->
               </div>
             </div>
@@ -294,6 +372,11 @@
                 Gin is a distilled alcoholic beverage known for its predominant flavor of juniper berries. It is a versatile spirit that can feature a wide range of botanicals.  
               </p>
               <p class="card-text">Price: $24.99</p>
+              <!-- Add "Add to Cart" button -->
+              <button class="btn btn-primary add-to-cart" data-product-id="Gin">Add to Cart</button>
+      <!-- somewhere in your HTML -->
+<div id="total-cost">Total Cost: $0.00</div>
+<div id="cart-quantity">0</div>
               <!-- Add "Add to Cart" button or any other action buttons as needed -->
             </div>
           </div>
@@ -308,6 +391,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- Your custom JavaScript code -->
     <script>
+      
       // Define the showProductDetails function
       function showProductDetails(productName) {
         var product = products[productName];
@@ -322,7 +406,7 @@
               <h1>${product.title}</h1>
               <p>${product.description}</p>
               <p>Price: ${product.price}</p>
-              <button class="btn btn-primary">Add to Cart</button>
+              <button class="btn btn-primary add-to-cart" data-product-id="${productName}">Add to Cart</button>
             </div>
           </div>
         `;
@@ -330,7 +414,28 @@
         // Show the product details and hide the product list
         productDetailsDiv.style.display = 'block';
         document.getElementById('productList').style.display = 'none';
+    
+        // Add event listener to the "Add to Cart" button
+        productDetailsDiv.querySelector('.add-to-cart').addEventListener('click', function(event) {
+          // Get the product ID from the button's data-product-id attribute
+          var productId = event.target.dataset.productId;
+    
+          // If the product is already in the cart, increment its quantity
+          // Otherwise, add the product to the cart with a quantity of 1
+          if (cart[productId]) {
+            cart[productId]++;
+          } else {
+            cart[productId] = 1;
+          }
+    
+          // Update the total cost and quantity displays
+          updateTotalCost();
+          updateCartQuantity();
+        });
       }
+    
+      // Initialize the cart as an empty object
+      var cart = {};
     
       // Add event listener for category filter
       document
@@ -359,6 +464,71 @@
           showProductDetails(card.id);
         });
       });
+       // Define your products
+  var products = {
+    'Absinthe': {
+      'title': 'Absinthe',
+      'description': 'Absinthe is a highly alcoholic beverage known for its distinct anise flavor. It is often referred to as "the Green Fairy".',
+      'price': 29.99,
+      'image': '/images/Absinthe.jpg'
+    },
+    // ... other products ...
+  };
+
+  // Initialize the cart as an empty object
+  var cart = {};
+
+  // Add click event listeners to "Add to Cart" buttons
+  var addToCartButtons = document.querySelectorAll(".add-to-cart");
+      addToCartButtons.forEach(function (button) {
+    button.addEventListener("click", function (event) {
+      // Get the product ID from the button's data-product-id attribute
+      var productId = event.target.dataset.productId;
+
+      // If the product is already in the cart, increment its quantity
+      // Otherwise, add the product to the cart with a quantity of 1
+      if (cart[productId]) {
+        cart[productId]++;
+      } else {
+        cart[productId] = 1;
+      }
+
+      // Update the total cost and quantity displays
+      updateTotalCost();
+      updateCartQuantity();
+    });
+  });
+      
+      // Function to calculate and display the total cost of items in the cart
+      function updateTotalCost() {
+        var totalCost = 0;
+    
+        // Iterate over the items in the cart
+        for (var productId in cart) {
+          // Get the product's price and quantity
+          var price = products[productId].price;
+          var quantity = cart[productId];
+    
+          // Add the product's total cost to the total cost
+          totalCost += price * quantity;
+        }
+    
+        // Display the total cost
+        document.getElementById('total-cost').textContent = 'Total Cost: $' + totalCost.toFixed(2);
+      }
+    
+      function updateCartQuantity() {
+        var totalQuantity = 0;
+    
+        // Iterate over the items in the cart
+        for (var productId in cart) {
+          // Add the quantity of the current item to the total quantity
+          totalQuantity += cart[productId];
+        }
+    
+        // Update the displayed quantity
+        document.getElementById('cart-quantity').textContent = totalQuantity;
+      }
     </script>
   </body>
 </html>
