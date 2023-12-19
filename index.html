@@ -15,26 +15,36 @@
     <!-- <a href="cart.html">View Cart</a> -->
   </head>
   <body>
-   <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">BoozeBuddy</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="products.html">Products</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="cart.html">View Cart</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">BoozeBuddy</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only"></span
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">View Cart</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- Homepage Content -->
     <div class="container mt-4">
@@ -72,347 +82,10 @@
       <!-- Featured Products Section -->
       <h2 class="mb-4">Featured Products</h2>
 
-      <div class="row">
- 
-        <!-- Product 1 -->
-        <div class="col-md-4 mb-4" id="product1" data-category="Whiskey">
-          <div class="card">
-            <img
-              class="card-img-top product-image"
-              src="/images/Whiskey.jpg"
-              alt="Product 1 Image"
-              style="width: 300px; height: 300px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Whiskey</h5>
-              <p class="card-text">
-                     Whiskey is a distilled alcoholic beverage made from fermented grain mash. It is aged in wooden barrels, which imparts a range of flavors, including caramel, vanilla, and oak. 
-              </p>
-              <p class="card-text">Price: $34.99</p>
-              <!-- Add "Add to Cart" button or any other action buttons as needed -->
-              <!-- Add "Add to Cart" button -->
-              <a href="cart.html" class="btn btn-primary add-to-cart"  data-product-id="Whiskey">Add to Cart</button>
-
-               <!-- Add "Checkout" button -->
-      <a href="checkout.html" class="btn btn-success">Checkout</a>
-
-<script>
-  function addToCart(productId) {
-    // Code to add product to cart goes here
-    alert('Added ' + productId + ' to cart');
-  }
-</script>
-      <!-- somewhere in your HTML -->
-<div id="total-cost">Total Cost: $0.00</div>
-<div id="cart-quantity">0</div>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 2 -->
-        <div class="col-md-4 mb-4" id="product2" data-category="Vodka">
-          <div class="card">
-            <img
-              class="card-img-top product-image"
-              src="/images/Vodka.jpg"
-              alt="Product 2 Image"
-              style="width: 300px; height: 300px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Vodka</h5>
-              <p class="card-text">
-                Vodka is a clear distilled alcoholic beverage. Different varieties can be made from fermented grains such as rye and wheat, or potatoes.
-              </p>
-              <p class="card-text">Price: $19.99</p>
-              <!-- Add "Add to Cart" button or any other action buttons as needed -->
-              <!-- Add "Add to Cart" button -->
-              <a href="cart.html" class="btn btn-primary add-to-cart" data-product-id="Vodka">Add to Cart</button>
-                
-               <!-- Add "Checkout" button -->
-      <a href="checkout.html" class="btn btn-success">Checkout</a>
-              
-      <!-- somewhere in your HTML -->
-<div id="total-cost">Total Cost: $0.00</div>
-<div id="cart-quantity">0</div>
-            </div>
-          </div>
-        </div>
-        <!-- Product 3 -->
-        <div class="col-md-4 mb-4" id="product3" data-category="Wine">
-          <div class="card">
-            <img
-              class="card-img-top product-image"
-              src="/images/Wine.jpg"
-              alt="Product 2 Image"
-              style="width: 300px; height: 300px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Wine</h5>
-              <p class="card-text">
-                Red Wine is a fermented alcoholic beverage made from dark-colored grape varieties. It typically has rich flavors and is often enjoyed with meals or on its own.
-              </p>
-              <p class="card-text">Price: $19.99</p>
-              <!-- Add "Add to Cart" button or any other action buttons as needed -->
-              <!-- Add "Add to Cart" button -->
-              <a href="cart.html" class="btn btn-primary add-to-cart mr-2"  data-product-id="Wine">Add to Cart</button>
-               <!-- Add "Checkout" button -->
-      <a href="checkout.html" class="btn btn-success">Checkout</a>
-      <!-- somewhere in your HTML -->
-<div id="total-cost">Total Cost: $0.00</div>
-<div id="cart-quantity">0</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 4 -->
-        <div class="col-md-4 mb-4" id="product4" data-category="Brandy">
-          <div class="card">
-            <img
-              class="card-img-top product-image"
-              src="/images/Brandy.jpg"
-              alt="Product 2 Image"
-              style="width: 300px; height: 300px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Brandy</h5>
-              <p class="card-text">
-                Brandy is a distilled wine or fermented fruit juice that is aged in wooden barrels. It boasts rich and complex flavors, often including notes of fruit, oak, and spices. 
-              </p>
-              <p class="card-text">Price: $24.99</p>
-              <!-- Add "Add to Cart" button or any other action buttons as needed -->
-              <!-- Add "Add to Cart" button -->
-              <a href="cart.html" class="btn btn-primary add-to-cart mr-2"data-product-id="Brandy">Add to Cart</button>
-               <!-- Add "Checkout" button -->
-      <a href="checkout.html" class="btn btn-success">Checkout</a>
-      <!-- somewhere in your HTML -->
-<div id="total-cost">Total Cost: $0.00</div>
-<div id="cart-quantity">0</div>
-            </div>
-          </div>
-        </div>
-        <!-- Product 5 -->
-        <div class="col-md-4 mb-4" id="product5"data-category="Beer">
-          <div class="card">
-            <img
-              class="card-img-top product-image"
-              src="/images/Beer.jpg"
-              alt="Product 2 Image"
-              style="width: 300px; height: 300px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Beer</h5>
-              <p class="card-text">
-                Beer is a refreshing and widely consumed alcoholic beverage. It is typically made from fermented grains, predominantly malted barley, combined with water, hops, and yeast.
-              </p>
-              <p class="card-text">Price: $5.99</p>
-              <!-- Add "Add to Cart" button -->
-              <a href="cart.html" class="btn btn-primary add-to-cart mr-2"data-product-id="Beer">Add to Cart</button>
-               <!-- Add "Checkout" button -->
-      <a href="checkout.html" class="btn btn-success">Checkout</a>
-      <!-- somewhere in your HTML -->
-<div id="total-cost">Total Cost: $0.00</div>
-<div id="cart-quantity">0</div>
-              <!-- Add "Add to Cart" button or any other action buttons as needed -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 5 -->
-        <div class="col-md-4 mb-4" id="product6" data-category="Rum">
-          <div class="card">
-            <img
-              class="card-img-top product-image"
-              src="/images/Rum.jpg"
-              alt="Product 2 Image"
-              style="width: 300px; height: 300px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Rum</h5>
-              <p class="card-text">
-                Rum is a distilled alcoholic beverage made from sugarcane byproducts, such as molasses, or directly from sugarcane juice. With a diverse range of flavors.
-              </p>
-              <p class="card-text">Price:  $22.99</p>
-              <!-- Add "Add to Cart" button -->
-              <a href="cart.html" class="btn btn-primary add-to-cart mr-2" data-product-id="Rum">Add to Cart</button>
-               <!-- Add "Checkout" button -->
-      <a href="checkout.html" class="btn btn-success">Checkout</a>
-      <!-- somewhere in your HTML -->
-<div id="total-cost">Total Cost: $0.00</div>
-<div id="cart-quantity">0</div>
-              <!-- Add "Add to Cart" button or any other action buttons as needed -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 5 -->
-        <div class="col-md-4 mb-4" id="product7" data-category="Tequila">
-          <div class="card">
-            <img
-              class="card-img-top product-image"
-              src="/images/Tequila.jpg"
-              alt="Product 2 Image"
-              style="width: 300px; height: 300px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Tequila</h5>
-              <p class="card-text">
-                <p class="card-text">
-                  Tequila, originating from Mexico, is a distilled spirit crafted from the fermented juice of the blue agave plant. 
-                </p>
-                <p class="card-text">Price: $39.99</p>
-              </p>
-              <!-- Add "Add to Cart" button -->
-              <a href="cart.html" class="btn btn-primary add-to-cart mr-2" data-product-id="Tequila">Add to Cart</button>
-               <!-- Add "Checkout" button -->
-      <a href="checkout.html" class="btn btn-success">Checkout</a>
-      <!-- somewhere in your HTML -->
-<div id="total-cost">Total Cost: $0.00</div>
-<div id="cart-quantity">0</div>
-              <!-- Add "Add to Cart" button or any other action buttons as needed -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 5 -->
-        <div class="col-md-4 mb-4" id="product8" data-category="Sake">
-          <div class="card">
-            <img
-              class="card-img-top product-image"
-              src="/images/Sake.jpg"
-              alt="Product 2 Image"
-              style="width: 300px; height: 300px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Sake</h5>
-              <p class="card-text">
-                Sake is a traditional Japanese rice wine with a history dating back centuries. It is made through the fermentation of polished rice, water, yeast, and koji mold. 
-              </p>
-              <p class="card-text">Price: $18.99</p>
-              <!-- Add "Add to Cart" button -->
-              <a href="cart.html" class="btn btn-primary add-to-cart mr-2" data-product-id="Sake">Add to Cart</button>
-               <!-- Add "Checkout" button -->
-      <a href="checkout.html" class="btn btn-success">Checkout</a>
-      <!-- somewhere in your HTML -->
-<div id="total-cost">Total Cost: $0.00</div>
-<div id="cart-quantity">0</div>
-              <!-- Add "Add to Cart" button or any other action buttons as needed -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 5 -->
-        <div class="col-md-4 mb-4" id="product9" data-category="Absinthe">
-          <div class="card">
-            <img
-              class="card-img-top product-image"
-              src="/images/Absinthe.jpg"
-              alt="Product 2 Image"
-              style="width: 300px; height: 300px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Absinthe</h5>
-              <p class="card-text">
-                Absinthe is a highly alcoholic beverage known for its distinct anise flavor. It is often referred to as "the Green Fairy".
-              </p>
-              <p class="card-text">Price: $29.99</p>
-              <!-- Add "Add to Cart" button -->
-              <a href="cart.html" class="btn btn-primary add-to-cart mr-2" data-product-id="Absinthe">Add to Cart</button>
-               <!-- Add "Checkout" button -->
-      <a href="checkout.html" class="btn btn-success">Checkout</a>
-      <!-- somewhere in your HTML -->
-<div id="total-cost">Total Cost: $0.00</div>
-<div id="cart-quantity">0</div>
-              <!-- Add "Add to Cart" button or any other action buttons as needed -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 5 -->
-        <div class="col-md-4 mb-4" id="product10" data-category="Scotch">
-          <div class="card">
-            <img
-              class="card-img-top product-image"
-              src="/images/Scotch.jpg"
-              alt="Product 2 Image"
-              style="width: 300px; height: 300px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Scotch</h5>
-              <p class="card-text">
-                Scotch is a whisky that originates from Scotland and is known for its distinct production process. It is typically made from malted barley and aged in oak barrels. 
-              </p>
-              <p class="card-text">Price:$45.99</p>
-              <!-- Add "Add to Cart" button -->
-              <a href="cart.html" class="btn btn-primary add-to-cart mr-2" data-product-id="Scotch">Add to Cart</button>
-               <!-- Add "Checkout" button -->
-      <a href="checkout.html" class="btn btn-success">Checkout</a>
-      <!-- somewhere in your HTML -->
-<div id="total-cost">Total Cost: $0.00</div>
-<div id="cart-quantity">0</div>
-              <!-- Add "Add to Cart" button or any other action buttons as needed -->
-            </div>
-          </div>
-        </div>
-
-           <!-- Product 5 -->
-           <div class="col-md-4 mb-4" id="product11" data-category="Cognac">
-            <div class="card">
-              <img
-                class="card-img-top product-image"
-                src="/images/Cognac.jpg"
-                alt="Product 2 Image"
-                style="width: 300px; height: 300px"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Cognac</h5>
-                <p class="card-text">
-                  Cognac is a type of brandy that originates from the Cognac region in France. It is made from distilled white wine and aged in oak barrels. Cognac is known for its refined and complex flavors. 
-                </p>
-                <p class="card-text">Price: $34.99</p>
-                <!-- Add "Add to Cart" button -->
-                <a href="cart.html" class="btn btn-primary add-to-cart mr-2" data-product-id="Cognac">Add to Cart</button>
-                 <!-- Add "Checkout" button -->
-      <a href="checkout.html" class="btn btn-success">Checkout</a>
-
-      <!-- somewhere in your HTML -->
-<div id="total-cost">Total Cost: $0.00</div>
-<div id="cart-quantity">0</div>
-                <!-- Add "Add to Cart" button or any other action buttons as needed -->
-              </div>
-            </div>
-          </div>
-        
-        <!-- Product 6 -->
-        <div class="col-md-4 mb-4"  id="product12"data-category="Gin">
-          <div class="card">
-            <img
-              class="card-img-top product-image"
-              src="/images/Gin.jpg"
-              alt="Product 2 Image"
-              style="width: 300px; height: 300px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Gin</h5>
-              <p class="card-text">
-                Gin is a distilled alcoholic beverage known for its predominant flavor of juniper berries. It is a versatile spirit that can feature a wide range of botanicals.  
-              </p>
-              <p class="card-text">Price: $24.99</p>
-              <!-- Add "Add to Cart" button -->
-              <a href="cart.html" class="btn btn-primary add-to-cart mr-2" data-product-id="Gin">Add to Cart</button>
-               <!-- Add "Checkout" button -->
-      <a href="checkout.html" class="btn btn-success">Checkout</a>
-      <!-- somewhere in your HTML -->
-<div id="total-cost">Total Cost: $0.00</div>
-<div id="cart-quantity">0</div>
-              <!-- Add "Add to Cart" button or any other action buttons as needed -->
-            </div>
-          </div>
-        </div>
-        <!-- Add more featured products as needed -->
+      <div class="row" id="productList">
+        <!-- items added via javascript -->
       </div>
     </div>
-
     <!-- Bootstrap JS and Popper.js (for Bootstrap components requiring JavaScript) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -420,7 +93,6 @@
     <!-- Your custom JavaScript code -->
     <script src="index.js"></script>
     <script src="products.js"></script>
-  <script src="cart.js"></script>
-    
+    <script src="cart.js"></script>
   </body>
 </html>
